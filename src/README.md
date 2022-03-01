@@ -5,7 +5,7 @@ heroText: Leaf Skeleton 3.0
 tagline: Lightweight boilerplate based on leaf
 actionButtons:
   - text: Get Started
-    link: /docs/introduction/
+    link: /docs/
   - text: GitHub
     link: https://github.com/leafsphp/skeleton
     extraClass: github grey
