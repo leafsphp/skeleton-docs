@@ -1,6 +1,6 @@
 <template>
   <div id="vs">
-    <p>Documentation for v3.x is still being updated.</p>
+    <p>You are viewing the docs for v3.x RC.</p>
     &nbsp;
     <a href="https://archive.leafphp.dev/#/skeleton/" target="_blank" rel="noreferrer">Click here</a>
     &nbsp;for earlier versions.
