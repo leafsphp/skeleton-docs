@@ -16,8 +16,10 @@ const sidebar = {
       title: 'Config',
       collapsable: false,
       children: [
-        '/docs/config/auth',
         '/docs/config/env',
+        '/docs/config/app',
+        '/docs/config/database',
+        '/docs/config/auth',
         '/docs/config/cors',
         '/docs/config/views',
         '/docs/config/paths'

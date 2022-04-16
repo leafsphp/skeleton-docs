@@ -10,38 +10,32 @@ Skeleton comes in with a whole lot of available customizations. One major custom
 <?php
 
 return [
-  "controllers_path" => "controllers",
+	'controllersPath' => 'controllers',
 
-  "models_path" => "models",
+	'modelsPath' => 'models',
 
-  // skeleton doesn't come with migrations
-  "migrations_path" => "migrations",
+	'migrationsPath' => 'migrations',
 
-  // skeleton doesn't come with seeds
-  "seeds_path" => "database/Seeds",
+	'seedsPath' => 'seeds',
 
-  // skeleton doesn't come with factories
-  "factories_path" => "database/Factories",
+	'factoriesPath' => 'factories',
 
-  "helpers_path" => "helpers",
+	'helpersPath' => 'helpers',
 
-  "views_path" => "pages",
+	'viewsPath' => 'pages',
 
-  "config_path" => "config",
+	'configPath' => 'config',
 
-  "storage_path" => "storage",
+	'storagePath' => 'storage',
 
-  // skeleton doesn't come with commands
-  "commands_path" => "console",
+	'commandsPath' => 'console',
 
-  "routes_path" => "routes",
+	'routesPath' => 'routes',
 
-  // doesn't come with defaults
-  "lib_path" => "Lib",
+	'libPath' => 'lib',
 
-  // doesn't come with defaults
-  "public_path" => "public",
+	'publicPath' => '.',
 ];
 ```
 
-These defined paths become available through global shortcut functions like `views_path()`
+These defined paths become available through global shortcut functions like `viewsPath()`

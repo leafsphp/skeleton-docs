@@ -4,7 +4,7 @@ aside: none
 
 # View Config
 
-leaf MVC v2 also ports in Leaf MVC's view config which allows you to customize how Leaf manages templates.
+Skeleton v2 also ports in Leaf MVC's view config which allows you to customize how Leaf manages templates.
 
 ```php
 <?php
@@ -20,7 +20,7 @@ return [
     | the usual LeafMVC view path has already been registered for you.
     |
     */
-    "views_path" => views_path(),
+    'viewsPath' => viewsPath('', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,12 +32,33 @@ return [
     | directory. However, as usual, you are free to change this value.
     |
     */
-    "cache_path" => storage_path('framework/views'),
+    'cachePath' => storagePath('framework/views'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom config method
+    |--------------------------------------------------------------------------
+    |
+    | Configuration for your templating engine.
+    |
+    */
+    'config' => function ($config) {
+        app()->template->config('path', str_replace('/', '', $config['views_path']));
+    },
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom render method
+    |--------------------------------------------------------------------------
+    |
+    | This render method is triggered whenever render() with the experimental
+    | option above set to true. This render method allows you to even plug
+    | in external view libraries, configure them and call them with `render`
+    | whenever and wherever you feel the need.
+    |
+    */
+    'render' => function (string $view, array $data = []) {
+        return response()->markup(app()->template->render($view, $data));
+    },
 ];
 ```
-
-## Next Steps
-
-- [Leaf Blade](/leaf/v/2.4.3/views/blade)
-- [Leaf Forms](/leaf/v/2.4.3/views/forms)
-
