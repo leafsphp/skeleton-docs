@@ -14,7 +14,7 @@
         class="site-name"
         :class="{ 'can-hide': $site.themeConfig.logo }"
       >
-        Skeleton&nbsp;<span class="theme-text">3</span> <small class="beta-badge">RC</small>
+        Skeleton&nbsp;<span class="theme-text">3</span>
       </span>
     </RouterLink>
 
