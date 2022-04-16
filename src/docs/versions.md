@@ -18,4 +18,3 @@ This is a list of all Leaf MVC versions
   </a>
 </div>
 
-Built with ❤ by [**Mychi Darko**](//mychi.netlify.app)
