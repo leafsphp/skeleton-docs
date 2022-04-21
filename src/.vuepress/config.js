@@ -222,7 +222,10 @@ const sidebar = {
         '/community/join',
         '/coc/',
         '/community/contributing',
-        '/support/'
+        {
+          text: 'Support Leaf',
+          link: 'https://leafphp.dev/support/'
+        }
       ]
     }
   ]
@@ -377,7 +380,7 @@ module.exports = {
       },
       {
         text: 'Support Leaf',
-        link: '/support/'
+        link: 'https://leafphp.dev/support/'
       }
     ],
     repo: 'leafsphp/api-docs',
