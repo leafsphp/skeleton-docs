@@ -186,7 +186,7 @@ The whole request object is available on the `request` method. The `request` met
 
 ```php
 // get username
-$username = request("username");
+$username = request()->get("username");
 
 // get username
 $username = request()->get("username");
@@ -352,8 +352,8 @@ Post::where('title', 'Post Two')->get();
 
 // create a new post
 $post = new Post;
-$post->title = request("title");
-$post->body = request("body");
+$post->title = request()->get("title");
+$post->body = request()->get("body");
 $post->save();
 
 // delete a post
