@@ -406,7 +406,7 @@ module.exports = {
       appId: '',
       apiKey: ''
     },
-    topBanner: true
+    topBanner: false
   },
   plugins: [
     [

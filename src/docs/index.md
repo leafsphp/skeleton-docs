@@ -7,30 +7,30 @@ Skeleton 3.0 comes in with a bunch of fresh functionality, and also features add
 
 ## Why Skeleton?
 
-### 📚 Shallow learning curve
+### Shallow learning curve
 
-Whether you are new to PHP or have prior experience with the language, Skeleton helps you fit right in. All you need to get started with Leaf MVC is basic PHP knowledge and a little familiarity with MVC concepts and leaf itself.
+Whether you are new to PHP or have prior experience with the language, Skeleton helps you fit right in. All you need to get started with Leaf MVC is basic PHP knowledge and a little familiarity with MVC concepts. You can learn Leaf as you build.
 
-### 🪶 Lightweight
+### Lightweight
 
-Skeleton is not a framework, it is simply leaf with a few pre-installed modules and a bunch of folders 😅. This means that it is fast and almost as light as simply building with leaf core.
+Skeleton is not a framework, it is simply leaf with a few pre-installed modules and a bunch of folders. This means that it is fast and almost as light as simply building with leaf core.
 
-### 💪🏽 Powerful
+### Powerful
 
 Skeleton packs a ton of powerful tools which speed up your development process by folds. You have simple tools and modules like [authentication](https://www.leafphp.dev/modules/auth/), [MVC tools with MVC core](https://www.leafphp.dev/modules/mvc-core/) and a [ton of other modules](https://www.leafphp.dev/modules/).
 
 ## Installation
 
-You can quickly create a Skeleton project with [composer](https://getcomposer.org).
-
-```sh
-composer create-project leafs/skeleton <project-name> v3.x-dev
-```
-
-or with the leaf cli:
+You can quickly create a Skeleton project with [Leaf CLI](https://cli.leafphp.dev).
 
 ```sh
 leaf create <project-name> --skeleton --v3
+```
+
+Or with composer:
+
+```sh
+composer create-project leafs/skeleton <project-name>
 ```
 
 ## Directory Structure
