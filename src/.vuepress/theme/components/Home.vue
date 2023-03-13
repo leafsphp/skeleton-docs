@@ -35,25 +35,6 @@
 
       <Content class="theme-default-content custom" />
     </div>
-
-    <section class="section-sponsors" :class="{ active: sponsorsActive }" ref="sponsors">
-      <div class="inner">
-        <OpenCollectiveSponsors />
-      </div>
-    </section>
-
-    <footer class="main-footer">
-      <p v-if="data.socialIcons">
-        <SocialIcon
-          v-for="icon in data.socialIcons"
-          :type="icon.type"
-          :link="icon.link"
-          :key="icon.link"
-          extra-class="inverted"
-        />
-      </p>
-      <p class="copyright" v-html="data.footer"></p>
-    </footer>
   </main>
 </template>
 
